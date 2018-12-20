@@ -1,0 +1,49 @@
+<!-- Copyright 2018 Oliver Whittlef -->
+
+{% load static %}
+{% load sass_tags %}
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Oliver Whittlef{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'normalize.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="{% sass_src 'main.scss' %}">
+    {% block stylesheet %}{% endblock %}
+  </head>
+  <body>
+    <main>
+      <div class = "header">
+        <h1><a href="/portfolio">Oliver Whittlef</a></h1>
+      </div>
+      <div class="sticky-top">
+      <ul class="menu">
+        <li><a class="text-nav" href="resume" target="_blank"><i class="far fa-file"></i>&nbsp;&nbsp;Resume</a></li>
+        <li><a class="text-nav" href="http://medbot-neural.net" target="_blank"><i class="fas fa-robot"></i>&nbsp;&nbsp;Medbot</a></li>
+        <li><a class="text-nav" href="https://johnwhittlef.weebly.com" target="_blank"><i class="fas fa-home"></i>&nbsp;&nbsp;Architecture</a></li>
+        <li><a class="text-nav" href="contact"><i class="fas fa-phone fa-flip-horizontal"></i>&nbsp;&nbsp;Contact</a></li>
+      </ul>
+      </div>
+      <div class="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+      <footer>
+        <div class="footer">
+          <!-- <h3>A footer is coming . . .</h3> -->
+          <a class="text-nav" href="https://github.com/owhittlef" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="text-nav" href="https://www.linkedin.com/in/j-oliver-whittlef-8244a5134" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a class="text-nav" href="https://www.instagram.com/oliverwhittlef/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    {% block javascript %}
+    {% endblock %}
+  </body>
+</html>

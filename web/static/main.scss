@@ -1,0 +1,94 @@
+  $theme-primary: #0044cc;
+  $theme-secondary: #cc0000;
+  $theme-background: #ffff66;
+
+body {
+  margin: 0;
+}
+html, body, main {
+  width: 100%;
+  height: 100%;
+}
+div.header {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  background: $theme-background;
+}
+div.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+.text-nav {
+  font-size: 1.5em;
+  color: $theme-secondary;
+  cursor: pointer;
+}
+.text-nav:hover {
+  color: $theme-secondary;
+  text-decoration: none;
+}
+ul.menu {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+ul.menu li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: $theme-primary;
+  color: $theme-secondary;
+}
+ul.menu li:hover {
+  color: $theme-primary;
+  background: #009900;
+}
+ul.menu a {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: $theme-secondary;
+}
+div.content {
+  width: 100%;
+  height: 100%;
+}
+div.content-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+.parallax {
+  min-height: 500px;
+  background-color: $theme-background;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.footer {
+  width: 100%;
+  height: 100%;
+  padding: 0 35%;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  background: $theme-background;
+}
+div.footer h3 {
+  color: $theme-secondary;
+}

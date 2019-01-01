@@ -11,7 +11,7 @@ def index(request):
     return render(request, 'portfolio/index.html')
 @csrf_exempt
 def resume(request):
-    return FileResponse(open('portfolio/static/oliver_whittlef_resume.pdf', 'rb'), content_type='application/pdf')
+    return FileResponse(open('portfolio/static/oliver_whittlef_resume.pdf', 'rb'), content_type='application/pdf', filename="Resume - Oliver Whittlef")
 @csrf_exempt
 def code(request):
     return render(request, 'portfolio/code.html')

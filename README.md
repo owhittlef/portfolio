@@ -1,2 +1,2 @@
 # portfolio
-Codebase for my personal website, oliverwhittlef.com
+Codebase for my personal website: [oliverwhittlef.com](http://oliverwhittlef.com/portfolio/)

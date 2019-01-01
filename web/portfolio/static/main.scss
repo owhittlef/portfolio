@@ -1,6 +1,7 @@
-  $theme-primary: #0044cc;
-  $theme-secondary: #cc0000;
-  $theme-background: #ffff66;
+  $theme-primary: #007bff;;
+  $theme-secondary: #000;
+  $theme-background: #F8F9FA;
+  $theme-hover: #0069d9;
 
 body {
   margin: 0;
@@ -14,6 +15,14 @@ div.header {
   justify-content: center;
   vertical-align: middle;
   background: $theme-background;
+}
+div.header .title {
+  color: $theme-secondary;
+  cursor: pointer;
+}
+div.header .title:hover {
+  color: $theme-hover;
+  text-decoration: none;
 }
 div.sticky-top {
   position: -webkit-sticky;
@@ -47,7 +56,7 @@ ul.menu li {
 }
 ul.menu li:hover {
   color: $theme-primary;
-  background: #009900;
+  background: $theme-hover;
 }
 ul.menu a {
   margin: auto;
@@ -80,15 +89,20 @@ div.content-center {
   background-repeat: no-repeat;
   background-size: cover;
 }
+div.footer-wrap {
+  // implement a hack for content min width
+}
 div.footer {
   width: 100%;
   height: 100%;
-  padding: 0 35%;
+  padding: 0 25%;
+  min-width: 350px;
   display: flex;
+  white-space: nowrap;
   justify-content: space-between;
   vertical-align: middle;
   background: $theme-background;
 }
-div.footer h3 {
-  color: $theme-secondary;
+div.footer .text-nav:hover {
+  color: $theme-hover;
 }

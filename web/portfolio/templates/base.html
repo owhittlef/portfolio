@@ -17,14 +17,14 @@
   <body>
     <main>
       <div class = "header">
-        <h1><a href="/portfolio">Oliver Whittlef</a></h1>
+        <h1><a class="title" href="/portfolio">Oliver Whittlef</a></h1>
       </div>
       <div class="sticky-top">
       <ul class="menu">
         <li><a class="text-nav" href="resume" target="_blank"><i class="far fa-file"></i>&nbsp;&nbsp;Resume</a></li>
+        <li><a class="text-nav" href="code"><i class="fas fa-code"></i>&nbsp;&nbsp;Code</a></li>
         <li><a class="text-nav" href="http://medbot-neural.net" target="_blank"><i class="fas fa-robot"></i>&nbsp;&nbsp;Medbot</a></li>
         <li><a class="text-nav" href="https://johnwhittlef.weebly.com" target="_blank"><i class="fas fa-home"></i>&nbsp;&nbsp;Architecture</a></li>
-        <li><a class="text-nav" href="contact"><i class="fas fa-phone fa-flip-horizontal"></i>&nbsp;&nbsp;Contact</a></li>
       </ul>
       </div>
       <div class="content">
@@ -32,11 +32,16 @@
         {% endblock %}
       </div>
       <footer>
-        <div class="footer">
-          <!-- <h3>A footer is coming . . .</h3> -->
-          <a class="text-nav" href="https://github.com/owhittlef" target="_blank"><i class="fab fa-github"></i></a>
-          <a class="text-nav" href="https://www.linkedin.com/in/j-oliver-whittlef-8244a5134" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a class="text-nav" href="https://www.instagram.com/oliverwhittlef/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="footer-wrap">
+          <div class="footer">
+            <a class="text-nav" href="tel:+16122234973"><i class="fas fa-phone fa-flip-horizontal"></i> +1 (612) 223-4973</a>
+            <a class="text-nav" href="mailto:joliverw@gmail.com"><i class="far fa-envelope"></i> joliverw@gmail.com</a>
+          </div>
+          <div class="footer">
+            <a class="text-nav" href="https://github.com/owhittlef" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="text-nav" href="https://www.linkedin.com/in/j-oliver-whittlef-8244a5134" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="text-nav" href="https://www.instagram.com/oliverwhittlef/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </footer>
     </main>

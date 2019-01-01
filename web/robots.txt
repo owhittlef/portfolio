@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /portfolio/*
+Sitemap: http://oliverwhittlef.com/sitemap.xml

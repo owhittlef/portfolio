@@ -3,7 +3,25 @@
 {% load static %}
 
 {% block content %}
-<div class="content-center">
-  <h2><pre>&lt;&gt; This page is under construction. &lt;&#47;&gt;</pre></h2>
-</div>
+<h2>My Work</h2>
+<p style="font-size:1.5em;">
+  I am extremely passionate about programming and innovation in tech. I have experience programming in C, C++, C#, Java, Python, JavaScript (JQuery, Angular), Lua, OCaml, HTML, CSS and SCSS/SASS, as well as the ASP.NET, Spring and Django web frameworks and AWS. Below are some examples of my personal and professional work.
+</p>
+<h3>FlashPhoto</h3>
+<p>
+  FlashPhoto is a stripped-down version of photoshop written in C++ using the <a href="https://github.com/ivlab/MinGfx" target="_blank">MinGfx</a> library. For this application I implemented a number of tools such as a pen, highlighter and spray can. As well as many filters using regular and convolution kernels. A large part of the project was about application design, so created extensive UML class diagrams intended to maximize the extensibility and readability. Although I can't post the code here because it was a school assignment, I can provide more details if contacted personally.
+</p>
+<h3>MedBot</h3>
+<p>
+  MedBot is an AI chat bot which tells the user if any of the drugs they're taking have adverse reactions. Furthermore, it can converse about general topics, due to a custom 4 million word corpus which I helped build. The drug interactions are analyzed using the <a href="https://catalog.data.gov/dataset/drug-interaction-api">Drug Interaction API</a> provided by data.gov. Natural language processing and response construction is achieved through the <a href="https://www.nltk.org/">NLTK</a> library. The bot learns over the corpus in order to respond naturally and be able to converse about common subjects, and it also learns from past interactions with users. We created a website for the bot using Django and hosted it on AWS Elastic Beanstalk.
+</p>
+<h3>Continuous Authentication Android App</h3>
+<p>
+  Seniors pursuing a B.S. in Computer Science can opt to take a class where a small group of students meets with a company in the industry to work on a project in a professional setting. Our company tasked us with creating a continuous authentication application to run on an android device. The application would run on devices carried by many workers at the company in order to save them time when logging in, as well as enhance security by detecting if the phone was stolen and ending the session. The app is written in Java and the authentication server uses spring. Authentication is achieved through OAuth using JWT tokens. The data that's used for authentication includes location, gait, scroll speed and more. A model is then created and learned over using TensorFlow and Keras.
+</p>
+<h3>Professional Experience</h3>
+<p>
+  All of my professional development experience has been at Xvoucher (<a href="https://info.xvoucher.com" target="_blank">xvoucher.com</a>), a SaaS application used by the learning industry. I am a full stack application developer who specializes in UI/UX. Xvoucher uses ASP.NET with C#, along with Telerik, Bootstrap and Angular for front-end libraries.
+  <!-- I started working there during my Freshman year with very little knowledge of software development, but soon rose to become one of their core developers. In the beginning I didn’t know the tech stack and had to work hard to meet expectations, but since then my skill set has become refined enough for me to exceed my responsibilities. This lead to my promotion from an intern to a full-time application developer. Now, I lead development efforts on many of our site's most-visited pages. I often consult with upper management on the the technological impacts of business decisions on the application, and I'm one of the few developers who is trusted to work directly with clients. All of this is because I’ve demonstrated a talent for both the technical and interpersonal aspects of my job — I can communicate effectively with different parties, and meet complex requirements on a deadline. -->
+</p>
 {% endblock %}
